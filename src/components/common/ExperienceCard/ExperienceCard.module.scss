@@ -1,0 +1,35 @@
+@use '@/styles/variables/colors' as cl;
+
+.card {
+	width: 100%;
+	max-width: 570px;
+	display: flex;
+	align-items: flex-start;
+	gap: 30px;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.number {
+	font-size: 32px;
+	background: cl.$color__linear-gradient;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.title {
+	font-size: 32px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.description {
+	font-size: 20px;
+	line-height: 28px;
+	color: #ffffff;
+}

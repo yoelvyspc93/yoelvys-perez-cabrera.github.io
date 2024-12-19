@@ -1,3 +1,6 @@
+import '@/styles/app.scss';
+import '@/styles/storybook.scss';
+
 import type { Preview } from "@storybook/react";
 
 const customViewports = {
@@ -29,19 +32,26 @@ const customViewports = {
       height: '1080px',
     },
   },
+  fullscreen: {
+    name: 'Fullscreen',
+    styles: {
+      width: '100%',
+      height: '100%',
+    },
+  },
 };
 
 const preview: Preview = {
-  tags: ['autodocs'],
+  // tags: ['autodocs'],
   parameters: {
-    default: 'dark',
-    value: [
-      {
-        name: 'dark',
-        value: '#1D212C',
-      },
-    ],
     backgrounds: {
+      default: 'dark',
+      value: [
+        {
+          name: 'dark',
+          value: '#1e1e1e',
+        },
+      ],
       disable: true,
       grid: {
         disable: true,
@@ -49,7 +59,7 @@ const preview: Preview = {
     },
     viewport: {
       viewports: customViewports,
-      defaultViewport: 'desktop',
+      defaultViewport: 'fullscreen',
     },
     controls: {
       matchers: {

@@ -1,0 +1,68 @@
+@use '@/styles/variables/colors' as cl;.skills {
+	display: flex;
+	flex-direction: column;
+	gap: 64px;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+
+	h2 {
+		font-size: 64px;
+		font-weight: 400;
+		color: #ffffff;
+
+		span {
+			font-weight: bold;
+			background: cl.$color__linear-gradient;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(9, 82px);
+	grid-template-rows: repeat(5, 82px);
+	gap: 1.5rem;
+	justify-content: center;
+	align-items: center;
+	max-width: 1000px;
+}
+
+.item {
+	width: 82px;
+	height: 82px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: rgba(137, 144, 199, 0.1);
+	border-radius: 8px;
+	text-align: center;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+
+	svg {
+		width: 42px;
+		height: 42px;
+	}
+}
+
+.large {
+	width: 180px;
+	height: 180px;
+	grid-row: span 2;
+	grid-column: span 2;
+
+	svg {
+		width: 84px;
+		height: 84px;
+	}
+}
+
+.empty {
+	background: none;
+	pointer-events: none;
+}

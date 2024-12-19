@@ -1,5 +1,4 @@
 @use '@/styles/variables/colors' as cl;
-
 .gradient_button {
 	position: relative;
 	font-size: 20px;
@@ -17,7 +16,7 @@
 
 	padding: 8px 18px;
 	border: none;
-	border-radius: 50px;
+	border-radius: 8px;
 	cursor: pointer;
 	background-color: transparent;
 	z-index: 1;
@@ -32,7 +31,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	border-radius: 50px;
+	border-radius: 8px;
 	padding: 2px;
 	background: linear-gradient(
 		to right,
@@ -57,6 +56,6 @@
 		cl.$colo__violet-blue,
 		cl.$color__sky-blue
 	);
-	color: cl.$color__white;
-	-webkit-text-fill-color: cl.$color__white;
+	-webkit-text-fill-color: cl.$color__black;
+	color: cl.$color__black;
 }

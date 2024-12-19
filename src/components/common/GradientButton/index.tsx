@@ -7,6 +7,6 @@ interface Props {
 
 export const GradientButton = ({ children }: Props) => {
   return (
-    <button className={styles.gradient_button}>{children}</button>
+    <button aria-label='gradient button' type='button' className={styles.gradient_button}>{children}</button>
   )
 }

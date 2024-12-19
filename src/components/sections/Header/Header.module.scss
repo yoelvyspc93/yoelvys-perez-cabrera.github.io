@@ -1,0 +1,43 @@
+@use '@/styles/variables/colors' as cl;
+
+.header {
+	width: 100%;
+	max-width: 1200px;
+	height: 100vh;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.content {
+	min-width: 500px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.subtitle {
+	font-size: 32px;
+	font-weight: 500;
+	color: #ffffff;
+}
+
+.title {
+	font-size: 64px;
+	font-weight: bold;
+
+	span {
+		background: cl.$color__linear-gradient;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+.role {
+	font-size: 32px;
+}
+
+.button {
+	margin-top: 34px;
+}
