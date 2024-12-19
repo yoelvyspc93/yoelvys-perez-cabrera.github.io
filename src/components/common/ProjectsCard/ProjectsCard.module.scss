@@ -1,0 +1,50 @@
+@use '@/styles/variables/colors' as cl;
+
+.card {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+
+	&:hover {
+		background: cl.$color__linear-gradient;
+
+		.container {
+			.index,
+			.title,
+			.content {
+				color: #000000;
+			}
+		}
+	}
+
+	.container {
+		display: grid;
+		grid-template-columns: 40px 400px 700px 64px;
+		gap: 64px;
+		align-items: center;
+		padding: 64px;
+		transition: color 0.3s ease;
+
+		.index,
+		.title,
+		.content {
+			font-weight: normal;
+			color: #ffffff;
+		}
+
+		.index {
+			font-size: 32px;
+		}
+
+		.title {
+			font-weight: bold;
+		}
+
+		.content {
+			font-size: 20px;
+		}
+	}
+}

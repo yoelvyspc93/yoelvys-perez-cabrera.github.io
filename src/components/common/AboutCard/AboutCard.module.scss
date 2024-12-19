@@ -1,0 +1,31 @@
+@use '@/styles/variables/colors' as cl;
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 215px;
+	height: 200px;
+	background-color: cl.$color__white;
+	border-radius: 20px;
+	padding: 30px 20px;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 416px 116px rgba(0, 0, 0, 0),
+		0 266px 106px rgba(0, 0, 0, 0.01), 0 150px 90px rgba(0, 0, 0, 0.05),
+		0 67px 67px rgba(0, 0, 0, 0.09);
+
+	h2 {
+		font-size: 64px;
+		font-weight: bold;
+		background: cl.$color__linear-gradient;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.label {
+		font-size: 20px;
+		font-weight: 700;
+		color: #1d212c;
+		text-transform: uppercase;
+	}
+}
