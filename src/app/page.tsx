@@ -1,5 +1,6 @@
 import { Navigator } from "@/components/common/Navigator";
 import { About } from "@/components/sections/About";
+import { Contact } from "@/components/sections/Contact";
 import { Experience } from "@/components/sections/Experience";
 import { Header } from "@/components/sections/Header";
 import { Projects } from "@/components/sections/Projects";
@@ -16,6 +17,7 @@ export default function Home() {
         <Projects />
         <Skills />
         <Experience />
+        <Contact />
       </main>
     </div>
   );
