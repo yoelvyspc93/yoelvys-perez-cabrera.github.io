@@ -10,8 +10,8 @@ export interface About {
 
 export const about: About = {
   subtitle: 'About Me',
-  title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar sapien ac ex ullamcorper, non elementum velit eleifend. Nulla efficitur, justo eget dictum dapibus, nunc justo consectetur sem, id finibus urna dolor sed arcu.',
+  title: 'Frontend Developer passionate about innovation',
+  description: 'I specialize in creating intuitive and efficient user interfaces with over 6 years of experience in web development. Combining modern technologies like React and Next.js, I focus on optimizing performance and delivering exceptional user experiences.',
   data: [
     {
       value: '6+',
