@@ -19,6 +19,9 @@ import StorybookIcon from 'public/icons/storybook.svg';
 import TypeScriptIcon from 'public/icons/typescript.svg';
 import WebflowIcon from 'public/icons/webflow.svg';
 import WordpressIcon from 'public/icons/wordpress.svg';
+import EmailIcon from 'public/icons/email-gradient.svg';
+import LocationIcon from 'public/icons/location-gradient.svg';
+import TelegramIcon from 'public/icons/telegram-gradient.svg';
 
 interface Icons {
     Icon: unknown;
@@ -109,5 +112,17 @@ export const icons: Icons[] = [
     {
         Icon: WordpressIcon,
         title: 'wordpress',
+    },
+    {
+        Icon: EmailIcon,
+        title: 'email',
+    },
+    {
+        Icon: TelegramIcon,
+        title: 'telegram',
+    },
+    {
+        Icon: LocationIcon,
+        title: 'location',
     },
 ];

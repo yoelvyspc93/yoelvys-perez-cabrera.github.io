@@ -17,15 +17,24 @@
 			.content {
 				color: #000000;
 			}
+			.icon {
+				button {
+					border-color: #000000;
+				}
+				svg {
+					color: #000000;
+				}
+			}
 		}
 	}
 
 	.container {
 		display: grid;
-		grid-template-columns: 40px 400px 700px 64px;
+		max-width: 1200px;
+		grid-template-columns: 40px 400px 1fr 64px;
 		gap: 64px;
 		align-items: center;
-		padding: 64px;
+		padding: 64px 0;
 		transition: color 0.3s ease;
 
 		.index,
@@ -40,11 +49,16 @@
 		}
 
 		.title {
+			font-size: 54px;
 			font-weight: bold;
 		}
 
 		.content {
 			font-size: 20px;
+		}
+
+		.icon svg {
+			color: #ffffff;
 		}
 	}
 }
