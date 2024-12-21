@@ -4,7 +4,7 @@ import { GradientButton } from '@/components/common/GradientButton';
 
 export const Header = () => {
   return (
-    <section id='header' className={styles.header}>
+    <header id='header' className={styles.header}>
       <div className={styles.content}>
         <span className={styles.subtitle}>Hello</span>
         <h1 className={styles.title}>I’m <span>Yoelvys Pérez Cabrera</span></h1>
@@ -16,6 +16,6 @@ export const Header = () => {
       <div className={styles.image}>
         <Image width={800} height={745} src="/images/avatar.png" alt="Yoelvys Pérez Cabrera" />
       </div>
-    </section>
+    </header>
   );
 };

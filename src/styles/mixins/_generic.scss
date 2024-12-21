@@ -1,4 +1,5 @@
-*,*::before,
+*,
+*::before,
 *::after {
 	box-sizing: border-box;
 	padding: 0;
@@ -11,7 +12,9 @@
 	background-color: #1d212c;
 }
 
-section {
+header,
+section,
+footer {
 	width: 100%;
 	max-width: 1200px;
 	height: 100vh;

@@ -5,26 +5,22 @@ import styles from './Contact.module.scss';
 import { useState } from 'react';
 import { TextAreaField } from '@/components/common/Form/TextAreaField';
 import { GradientButton } from '@/components/common/GradientButton';
-
-import EmailIcon from '@/../public/icons/email-gradient.svg';
-import LocationIcon from '@/../public/icons/location-gradient.svg';
-import TelegramIcon from '@/../public/icons/telegram-gradient.svg';
+import { contact } from '@/constants/contact';
 
 export const Contact = () => {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
 
+  const { title, description, link } = contact
+
   return (
-    <section className={styles.contact}>
+    <section id='contact' className={styles.contact}>
       <div className={styles.contact__container}>
         <div className={styles.contact__info}>
-          <h2>Contact Me</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar sapien ac ex ullamcorper, non elementum velit eleifend.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar sapien ac ex ullamcorper, non elementum velit eleifend.</p>
+          <h2>{title}</h2>
+          {description.map((description, index) => <p key={index}>{description}</p>)}
           <ul>
-            <li><EmailIcon />yoelvyspc93@gmail.com</li>
-            <li><LocationIcon />+53 54773819</li>
-            <li><TelegramIcon />Cuba</li>
+            {link.map((link) => <li key={link.label}>{link.icon} {link.label}</li>)}
           </ul>
         </div>
         <div className={styles.contact_form}>

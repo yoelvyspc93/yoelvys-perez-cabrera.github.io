@@ -7,14 +7,14 @@ const customViewports = {
   mobile: {
     name: 'Mobile',
     styles: {
-      width: '376px',
-      height: '768px',
+      width: '390px',
+      height: '844px',
     },
   },
   tablet: {
     name: 'Tablet',
     styles: {
-      width: '768px',
+      width: '834px',
       height: '1024px',
     },
   },
