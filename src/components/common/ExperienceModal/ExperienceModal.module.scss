@@ -1,5 +1,4 @@
-@use '@/styles/variables/colors' as cl;
-.experience {
+@use '@/styles/variables/colors' as cl;.experience {
 	margin-top: 20px;
 	width: 100%;
 	display: flex;
@@ -11,6 +10,11 @@
 		line-height: 28px;
 		font-weight: 700;
 		color: #ffffff;
+	}
+
+	&__description {
+		color: #ffffff;
+		font-size: 18px;
 	}
 
 	&__technologies {
