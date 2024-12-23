@@ -1,3 +1,5 @@
+'use client';
+
 import { AboutCard } from "@/components/common/AboutCard";
 import styles from "./About.module.scss";
 import { GradientButton } from "@/components/common/GradientButton";
@@ -23,7 +25,7 @@ export const About = () => {
         <span>{about.subtitle}</span>
         <h2>{about.title}</h2>
         <p>{about.description}</p>
-        <GradientButton>See More</GradientButton>
+        <GradientButton onClick={() => { }}>See More</GradientButton>
       </div>
     </section>
   )

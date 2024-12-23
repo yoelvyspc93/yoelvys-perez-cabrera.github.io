@@ -22,6 +22,7 @@ import WordpressIcon from 'public/icons/wordpress.svg';
 import EmailIcon from 'public/icons/email-gradient.svg';
 import LocationIcon from 'public/icons/location-gradient.svg';
 import TelegramIcon from 'public/icons/telegram-gradient.svg';
+import CloseIcon from 'public/icons/close-outline.svg';
 
 interface Icons {
     Icon: unknown;
@@ -124,5 +125,9 @@ export const icons: Icons[] = [
     {
         Icon: LocationIcon,
         title: 'location',
+    },
+    {
+        Icon: CloseIcon,
+        title: 'close-outline',
     },
 ];

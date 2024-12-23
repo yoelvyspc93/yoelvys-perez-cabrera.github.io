@@ -9,7 +9,7 @@ export const Experience = () => {
       <div className={styles.experience__grid}>
         {experience.map((exp) => (
           <div key={exp.number} className={styles.experience__grid__item}>
-            <ExperienceCard {...exp} />
+            <ExperienceCard number={exp.number} title={exp.title} description={exp.main_description} />
           </div>
         ))}
       </div>

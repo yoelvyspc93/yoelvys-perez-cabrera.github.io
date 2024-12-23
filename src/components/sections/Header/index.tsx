@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import styles from './Header.module.scss';
 import { GradientButton } from '@/components/common/GradientButton';
@@ -10,7 +12,7 @@ export const Header = () => {
         <h1 className={styles.title}>I’m <span>Yoelvys Pérez Cabrera</span></h1>
         <p className={styles.role}>Frontend Developer</p>
         <div className={styles.button}>
-          <GradientButton>Download CV</GradientButton>
+          <GradientButton onClick={() => { }}>Download CV</GradientButton>
         </div>
       </div>
       <div className={styles.image}>

@@ -27,7 +27,7 @@ export const Contact = () => {
           <form>
             <InputField id='email' label='Email' type='email' value={email} onChange={(v) => setEmail(v)} />
             <TextAreaField id='message' label='Message' value={message} onChange={(v) => setMessage(v)} />
-            <GradientButton>Send message</GradientButton>
+            <GradientButton onClick={() => { }}>Send message</GradientButton>
           </form>
         </div>
       </div>

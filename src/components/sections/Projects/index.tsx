@@ -1,3 +1,5 @@
+'use client';
+
 import { projects } from "@/constants/projects";
 import styles from "./Projects.module.scss";
 import { ProjectsCard } from "@/components/common/ProjectsCard";
@@ -16,7 +18,7 @@ export const Projects = () => {
             content={project.description} />
         ))}
       </div>
-      <GradientButton>See More</GradientButton>
+      <GradientButton onClick={() => { }}>See More</GradientButton>
     </section>
   )
 }
