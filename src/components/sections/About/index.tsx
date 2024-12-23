@@ -4,9 +4,12 @@ import { AboutCard } from "@/components/common/AboutCard";
 import styles from "./About.module.scss";
 import { GradientButton } from "@/components/common/GradientButton";
 import { about } from "@/constants/about";
+import { useRouter } from "next/navigation";
 
 
 export const About = () => {
+  const router = useRouter();
+
   const [card1, card2, card3, card4] = about.data
 
   return (
@@ -25,7 +28,7 @@ export const About = () => {
         <span>{about.subtitle}</span>
         <h2>{about.title}</h2>
         <p>{about.description}</p>
-        <GradientButton onClick={() => { }}>See More</GradientButton>
+        <GradientButton onClick={() => router.push('/about')}>See More</GradientButton>
       </div>
     </section>
   )

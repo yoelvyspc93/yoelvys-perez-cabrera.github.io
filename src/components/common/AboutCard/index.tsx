@@ -5,7 +5,6 @@ interface Props {
   label: string
 }
 
-
 export const AboutCard = ({ number, label }: Props) => {
   return (
     <div className={styles.card}>

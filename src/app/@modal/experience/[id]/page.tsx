@@ -18,8 +18,6 @@ export default function ExperiencePage({ params }: PageProps) {
 
   const exp = experience.find((exp) => exp.number === id);
 
-  console.log({ exp });
-
   if (!exp) return notFound();
 
   return <Modal isOpen onClose={() => router.back()} title={exp?.title}>
