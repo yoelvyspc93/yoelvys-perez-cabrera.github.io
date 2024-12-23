@@ -1,5 +1,4 @@
-*,
-*::before,
+*,*::before,
 *::after {
 	box-sizing: border-box;
 	padding: 0;
@@ -10,6 +9,11 @@
 	color: #ffffff;
 	font-family: var(--font-montserrat), sans-serif;
 	background-color: #1d212c;
+}
+
+.modal {
+	font-family: var(--font-montserrat), sans-serif;
+	color: #ffffff;
 }
 
 header,

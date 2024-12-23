@@ -1,3 +1,6 @@
+'use client';
+
+import { useRouter } from 'next/navigation';
 import { GradientButton } from '../GradientButton';
 import styles from './ExperienceCard.module.scss';
 
@@ -8,6 +11,12 @@ interface Props {
 }
 
 export const ExperienceCard = ({ number, title, description }: Props) => {
+  const router = useRouter();
+
+  const handleOnClick = () => {
+    router.push(`experience/${number}/`);
+  }
+
   return (
     <div className={styles.card}>
       <span className={styles.number}>{number}</span>
@@ -16,9 +25,8 @@ export const ExperienceCard = ({ number, title, description }: Props) => {
         <p className={styles.description}>
           {description}
         </p>
-        <GradientButton>See More</GradientButton>
+        <GradientButton onClick={handleOnClick}>See More</GradientButton>
       </div>
-
     </div>
   );
 };
